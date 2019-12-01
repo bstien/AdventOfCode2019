@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		68AE07D1DF1BA5C1432E9471 /* Day1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE0589870480CFBE87E186 /* Day1.swift */; };
 		9A37D4A0084EFF26DC311614 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A37D0A8B0FB146C618B0F68 /* Day.swift */; };
 		9A37D6C92E9843EE20B59D42 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A37D98C066F76A6719AEAFD /* main.swift */; };
 		9A37DEB80161778FF81039C8 /* Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A37DD180EC6A084DEBBC316 /* Input.swift */; };
@@ -25,6 +26,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		68AE0589870480CFBE87E186 /* Day1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day1.swift; sourceTree = "<group>"; };
+		68AE0B77E3D1CF3D079782FE /* Day1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Day1.txt; sourceTree = "<group>"; };
 		9A37D0A8B0FB146C618B0F68 /* Day.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
 		9A37D19A250A3206930EF9DA /* AdventOfCode2019 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AdventOfCode2019; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A37D98C066F76A6719AEAFD /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -46,6 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				9A37DD180EC6A084DEBBC316 /* Input.swift */,
+				68AE0B77E3D1CF3D079782FE /* Day1.txt */,
 			);
 			path = Inputs;
 			sourceTree = "<group>";
@@ -80,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				9A37D0A8B0FB146C618B0F68 /* Day.swift */,
+				68AE0589870480CFBE87E186 /* Day1.swift */,
 			);
 			path = Days;
 			sourceTree = "<group>";
@@ -137,6 +142,7 @@
 				9A37D6C92E9843EE20B59D42 /* main.swift in Sources */,
 				9A37DEB80161778FF81039C8 /* Input.swift in Sources */,
 				9A37D4A0084EFF26DC311614 /* Day.swift in Sources */,
+				68AE07D1DF1BA5C1432E9471 /* Day1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
