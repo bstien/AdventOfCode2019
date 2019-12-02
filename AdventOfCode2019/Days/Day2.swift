@@ -13,37 +13,30 @@ class Day2: Day {
         var program = program
         var currentIndex = 0
 
-        while true {
-            if let opCode1 = program.readValue(fromPointerAt: currentIndex + 1),
-               let opCode2 = program.readValue(fromPointerAt: currentIndex + 2)
-            {
-                switch program[currentIndex] {
-                case 1:
-                    program[currentIndex + 3] = opCode1 + opCode2
-                case 2:
-                    program[currentIndex + 3] = opCode1 * opCode2
-                default:
-                    break
-                }
+        while program[currentIndex] != 99 {
+            let opCode1 = program.readValue(fromPointerAt: currentIndex + 1)
+            let opCode2 = program.readValue(fromPointerAt: currentIndex + 2)
+            let opCode3 = program[currentIndex + 3]
 
-                currentIndex += 4
-            } else {
-                break
+            switch program[currentIndex] {
+            case 1: program[opCode3] = opCode1 + opCode2
+            case 2: program[opCode3] = opCode1 * opCode2
+            default: break
             }
+
+            currentIndex += 4
         }
 
         return program[0]
     }
 }
 
-private extension Array where Element == Int {
-    func readValue(fromPointerAt index: Int) -> Int? {
-        if indices.contains(index) {
-            let pointer = self[index]
-            if indices.contains(pointer) {
-                return self[pointer]
             }
         }
         return nil
+
+private extension Array where Element == Int {
+    func readValue(fromPointerAt index: Int) -> Int {
+        self[self[index]]
     }
 }
