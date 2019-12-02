@@ -1,6 +1,6 @@
 class Day1: Day {
     static func run(input: String) {
-        let lines = splitIntoLines(input: input)
+        let lines = splitInput(input)
         let part1 = part1FuelRequirements(lines: lines)
         let part2 = part2FuelRequirementsForFuel(lines: lines)
 

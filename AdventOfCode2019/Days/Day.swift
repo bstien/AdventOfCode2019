@@ -28,7 +28,7 @@ extension Day {
         print("—————————————————————————————————")
     }
 
-    static func splitIntoLines(input: String) -> [String] {
-        input.split(separator: "\n").map(String.init)
+    static func splitInput(_ input: String, separator: Character = "\n") -> [String] {
+        input.split(separator: separator).map(String.init)
     }
 }
