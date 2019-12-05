@@ -23,6 +23,7 @@ class Day4: Day {
             })
             .count
     }
+}
 
 extension StringProtocol  {
     var digits: [Int] { compactMap{ $0.wholeNumberValue } }
