@@ -6,12 +6,12 @@ protocol Day {
 }
 
 extension Day {
-    static func solve() {
+    static func solve(input: String? = nil) {
         let formatter = NumberFormatter()
         formatter.minimumIntegerDigits = 1
         formatter.maximumFractionDigits = 3
 
-        guard let input = try? Input.get("\(Self.self).txt") else {
+        guard let input = input ?? readInputFromFile() else {
             print("Could not open input file \(Self.self).txt")
             return
         }
@@ -26,6 +26,10 @@ extension Day {
         print("Solved \(Self.self) in \(formatter.string(from: NSNumber(value: elapsed))!)s")
 
         print("—————————————————————————————————")
+    }
+
+    private static func readInputFromFile() -> String? {
+        try? Input.get("\(Self.self).txt")
     }
 
     static func splitInput(_ input: String, separator: Character = "\n") -> [String] {
